@@ -1,0 +1,12 @@
+{
+    "name": "",
+    "version": "1.0",
+    "description": "Pops up messages whenever on popular social media or entertainment websites for too long",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": ["*://*.facebook.com/*","*://*.youtube.com/*", "*://*.instagram.com/*","*://*.twitter.com/*", "*://*.reddit.com/*","*://*.netflix.com/*"],
+        "js": ["content.js"]
+      }
+    ] 
+}
